@@ -1,0 +1,9 @@
+- name: Test remote
+  hosts: all
+  tasks:
+  - name: Template out a text
+    template:
+       src: text.j2
+       dest: text-out.txt
+       mode: 0444
+
